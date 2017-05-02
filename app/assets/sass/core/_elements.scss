@@ -1,0 +1,27 @@
+body{
+  font-family: Calibri, Arial, sans-serif;
+   min-width:320px; // suppose you want minimun width of 1000px
+   _width: expression( document.body.clientWidth > 1000 ? "1000px" : "auto" ); /* sets max-width for IE */
+}
+
+.container.custom-container{
+      padding: 0;
+      width: 100%;
+}
+
+.hovered {
+	&:hover,&:active,&.active{
+		text-decoration: none;
+   		color: $whiteblue;
+	}
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	@extend .hovered;
+}
+
+.row{
+	margin:0
+}

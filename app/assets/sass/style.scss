@@ -1,0 +1,16 @@
+// temp
+.shpargalka{
+	width:100%;
+	top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+    opacity: 0.4;
+    pointer-events: none;
+    width:100%;
+    display: block;
+}
+
+@import "core/core.scss";
+@import "shared/shared.scss";
+@import "components/components.scss";

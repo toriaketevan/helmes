@@ -1,0 +1,127 @@
+// @media screen and (min-device-width:320px) { 
+// 	.footer{
+// 		background: #223745;
+// 		color:#fff;
+// 		padding-top: 10.5em;
+// 		padding-bottom: 4em;
+// 			.copyright{
+// 				display: block;
+// 				text-align: center;
+// 				font-family: "BPGGlaho";
+// 				color: #b7b7b7;
+// 	    		padding: 22px 39px;
+// 	    		font-style: italic;
+// 				@include font-size(10);
+// 			}
+// 			.social{
+// 				opacity:0.5;
+// 				display: block;
+// 				width: 60%;
+// 				margin: auto;
+// 				padding-top: 3em;
+// 				ul{
+// 					li{
+// 						width: 27%;
+// 						text-align: center;
+// 						a{
+// 							display: block;
+// 							span{
+// 								color:#fff;
+// 								text-transform: uppercase;
+// 								font-size:17px;
+// 							}
+// 							span:after{
+// 								content:'';
+// 								display: block;
+// 								margin: auto;
+// 							}
+// 							span.fb:after{
+// 								@include background-cover("../images/facebook.png");	
+// 								    width: 100px;
+//     								height: 17px;
+// 							}
+// 							span.google:after{
+// 								@include background-cover("../images/google.png");	
+// 								    width: 90px;
+//    									height: 27px;
+// 							}
+// 							span.twitter:after{
+// 								@include background-cover("../images/twitter.png");	
+// 								    width: 100px;
+//     								height: 17px;   
+// 							}
+// 							span.advertwise:after{
+// 								width: 80px;
+//     							height: 22px;
+// 								@include background-cover("../images/advertwise.png");	
+// 							}
+// 						}
+// 					}
+// 					li:last-child{
+// 						width: 16%;
+// 						text-align: right;
+// 					}
+// 					li:after{
+// 						content:"";
+// 						display: block;
+// 						width: 1px;
+// 						height: 20px;
+// 						margin-top: -30px;
+// 						float: right;
+// 					}
+// 					li:last-child:after{
+// 						display: none;
+// 					}
+// 				}
+// 			}
+// 	}
+// }
+// @media screen and (min-device-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+// @media screen and (min-device-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+// .footer{
+// 		padding-top:0;
+// 		padding-bottom:0;
+// 			.copyright{
+// 				display: inline-block;
+// 				padding: 28px 53px;
+// 				font-size: 13px;
+// 			}
+// 			.social{
+// 				width: 33%;
+// 				padding-top: 1em;
+// 				float:right;
+// 				ul{
+// 					li{
+// 						width: 23%;
+// 						a{
+// 							display: block;
+// 							span{
+// 								font-size: 9px;
+// 							}
+// 							span.fb:after{	
+// 								width: 50px;
+// 							    height: 10px;
+// 							}
+// 							span.google:after{
+// 								width: 40px;
+// 								height: 13px;
+// 							}
+// 							span.twitter:after{
+// 								width: 50px;
+// 							    height: 9px;   
+// 							}
+// 							span.advertwise:after{
+// 								width: 37px;
+// 	    						height: 10px;
+// 							}
+// 						}
+// 					}
+// 				}
+// 			}
+// 	}
+// }
+// @media screen and (min-device-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	
+// }
+// @import "test.scss";
+// @media screen and (min-device-width:1281px) { /* hi-res laptops and desktops */ }

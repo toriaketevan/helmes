@@ -1,0 +1,30 @@
+// @mixin border-radius($radius) {
+//   -webkit-border-radius: $radius;
+//      -moz-border-radius: $radius;
+//       -ms-border-radius: $radius;
+//           border-radius: $radius;
+// }
+
+// @mixin background-cover($url) {
+//   background: url($url) no-repeat center center; 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
+
+// @mixin font-size($size) {
+//     font-size: $size+px;
+//     @media screen and (min-width: 1280px) {
+//       font-size:$size+1+px;
+//     }
+//     @media screen and (min-width: 1472px) {
+//       font-size:$size+2+px;
+//     }
+//     @media screen and (min-width: 1700px) {
+//       font-size:$size+3+px;
+//     }
+//     @media screen and (min-width: 1920px) {
+//      font-size:$size+5+px;
+//     }
+// }

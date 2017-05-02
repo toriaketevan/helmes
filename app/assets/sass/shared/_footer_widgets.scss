@@ -1,0 +1,337 @@
+// .about-us .transparent-button{
+// 	@extend .img-after;
+// }
+// .transparent-button{
+// 	@extend .bordered-widget;
+// }
+// .widget-posts{
+// 	span{
+// 		@extend .img-after;
+// 	}
+// }
+// .widget-contact{
+// 	@extend .img-before;
+// }
+// .widget-contact{
+// 		.widget-title{
+// 			margin-bottom: 30px;
+// 		}
+// 		.widget-body{
+// 			margin:35px 0px;
+// 		}
+// 		position: relative;
+// 		&:before{
+// 			left:0;
+// 			right:0;
+// 			margin:auto;
+// 		}
+// }
+// .widget-address, .widget-phone, .widget-mail{
+// 		@extend .widget-contact;
+// }
+
+// @media screen and (min-device-width:320px) { 
+// 	.footer-widgets{
+// 		display: none;
+// 		// to switch places of blocks
+// 			display: -webkit-box;
+// 		    display: -moz-box;
+// 		    display: -ms-flexbox;
+// 		    display: -webkit-flex;
+// 		    display: flex;
+// 		    -webkit-box-orient: vertical;
+// 		    -moz-box-orient: vertical;
+// 		    -webkit-flex-direction: column;
+// 		    -ms-flex-direction: column;
+// 		    flex-direction: column;
+// 		// to switch places of blocks
+// 		width: 70%;
+// 	    margin: auto;
+// 	    padding: 5em 0px 2em;
+// 		.single-widget{
+// 			width: 70%;
+// 		    margin:auto;
+// 		    margin-bottom: 5em;
+// 		    padding: 18px 11px 0;
+// 		    .widget-title{
+// 		    	font-family: "BPGNinoMtavruliRegular";
+// 		    	font-size: 45px;
+// 		    }
+// 		    .widget-body{
+// 		    	line-height: 130%;
+// 			}
+// 		}
+// 		.transparent-button{
+// 			margin: 14px;
+// 	    	display: inherit;
+// 	    	font-family: "BPGGlaho";
+// 		}
+
+// 		.widget-contact{
+// 			margin-bottom:0;
+// 			.widget-body{
+// 				margin: 4.5em 0px;
+// 		    	font-size: 23px;
+// 			}
+// 		}
+		
+// 	}
+
+// 	.about-us{
+// 		-webkit-box-ordinal-group: 3;
+// 	    -moz-box-ordinal-group: 3;
+// 	    -ms-flex-order: 3;
+// 	    -webkit-order: 3;
+// 	    order: 3;
+// 		.transparent-button{
+// 			position:relative;
+// 			width: 55%;
+//     		margin: auto;
+// 			&:after{
+// 				width: 507px;
+// 			    height: 328px;
+// 			    bottom: -243px;
+// 			    left: -100px;
+// 				@include background-cover("../../assets/images/stamp.png");	
+// 			}
+// 		}
+// 		.widget-body{
+// 		    	margin: 10px 0;
+// 		    	line-height: 110%;
+// 		    	margin-bottom: 4em;
+// 		}
+// 	}
+
+// 	.widget-posts{
+// 		.widget-title{
+// 			margin-bottom: 3px;
+// 		}
+// 		.widget-body{
+// 			margin:0;
+// 		}
+// 		span{
+// 			display: block;
+// 			position: relative;
+// 			width: 100%;
+// 			padding: 26px 0px;
+// 		    line-height: 136%;
+// 		    font-size: 23px;
+// 			&:after{
+// 				height:1px;
+// 				width:30%;
+// 				left:0;
+// 				right:0;
+// 				bottom:0;
+// 				margin:auto;
+// 				background: #fff;
+// 			}
+// 			&:last-child{
+// 				&:after{
+// 					display: none;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	.widget-address{
+// 		&:before{
+// 			width: 40px;
+// 		    height: 54px;
+// 		    top: -75px;
+// 			@include background-cover("../../assets/images/pointer.svg");
+// 		}
+// 	}
+
+// 	.widget-phone{
+// 		&:before{
+// 			width: 50px;
+// 		    height: 50px;
+// 		    top: -70px;
+// 			@include background-cover("../../assets/images/phone.svg");
+// 		}
+// 	}
+
+// 	.widget-mail{
+// 		&:before{
+// 			width: 55px;
+// 		    height: 37px;
+// 		    top: -50px;
+// 			@include background-cover("../../assets/images/mail.svg");
+// 		}
+// 	}
+
+// 	.transparent-button{
+// 		padding: 0.6em 1.3em;
+//     	font-size: 30px;
+// 	}
+// }
+// @media screen and (min-device-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
+// @media screen and (min-device-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+// 	.footer-widgets{
+// 		display: block;
+// 		width: 68%;
+// 	    padding:0;
+//     	padding-bottom: 5em;
+// 		.single-widget{
+// 			display: inline-block;
+// 			width: 46%;
+// 		    margin: 1.5%;
+// 		    padding: 22px 11px 0;
+// 		    .widget-title{
+// 		    	font-size: 30px;
+// 		    }
+// 		    &:last-child{
+// 		    	display: block;
+// 		    	margin:auto;
+// 		    }
+// 		}
+// 		.widget-contact{
+// 			.widget-body{
+// 				margin: 35px 0px;
+// 			}
+// 		}
+// 	}
+
+// 	.about-us{
+// 		.transparent-button{
+// 			position:relative;
+// 			&:after{
+// 				width: 180px;
+// 			    height: 115px;
+// 			    bottom: -88px;
+// 	    		left: -36px;
+// 			}
+// 		}
+// 	}
+
+// 	.widget-posts{
+// 		span{
+// 			padding: 9px;
+// 			line-height:auto;
+// 			font-size: 22px;
+// 			&:after{
+// 				height:1px;
+// 				width:30%;
+// 				left:0;
+// 				right:0;
+// 				bottom:0;
+// 			}
+// 		}
+// 	}
+// 	.widget-address{
+// 		&:before{
+// 			width: 13px;
+// 			height: 17px;
+// 			top:-25px;
+// 		}
+// 	}
+
+// 	.widget-phone{
+// 		&:before{
+// 			width: 17px;
+// 		    height: 17px;
+// 		    top: -22px;
+// 		}
+// 	}
+
+// 	.widget-mail{
+// 		&:before{
+// 			width: 18px;
+// 		    height: 13px;
+// 		    top: -14px;
+// 		}
+// 	}
+
+// 	.transparent-button{
+// 		padding: 0.5em 1.3em;
+// 	    font-size:15px;
+// 	}
+// }
+// @media screen and (min-device-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	
+// }
+// @media screen and (min-device-width:1025px) {
+// 	.footer-widgets{
+// 		padding-bottom: 4.1em;
+// 		display: block;
+// 		width: 68%;
+// 	    padding:0;
+// 	    padding-bottom: 0;
+// 		.single-widget{
+// 			width: 30%;
+// 		    margin: 1.5%;
+// 		    padding: 22px 11px 0;
+// 		    .widget-title{
+// 		    	@include font-size(16);
+// 		    }
+// 		    &:last-child{
+// 		    	display: inline-block;
+// 		    	margin:auto;
+// 		    }
+// 		}
+// 		.widget-contact{
+// 			.widget-body{
+// 				margin: 35px 0px;
+// 		    	@include font-size(9);
+// 			}
+// 		}
+// 	}
+
+// 	.about-us{
+// 		.transparent-button{
+// 			position:relative;
+// 			&:after{
+// 				width: 180px;
+// 			    height: 115px;
+// 			    bottom: -88px;
+// 	    		left: -36px;
+// 			}
+// 		}
+// 		.widget-body{
+// 			margin-bottom:10px;
+// 		}
+// 	}
+
+// 	.widget-posts{
+// 		span{
+// 			padding: 9px;
+// 			line-height:auto;
+// 			@include font-size(9);
+// 			&:after{
+// 				height:1px;
+// 				width:30%;
+// 				left:0;
+// 				right:0;
+// 				bottom:0;
+// 			}
+// 		}
+// 	}
+// 	.widget-address{
+// 		&:before{
+// 			width: 13px;
+// 			height: 17px;
+// 			top:-25px;
+// 		}
+// 	}
+
+// 	.widget-phone{
+// 		&:before{
+// 			width: 17px;
+// 		    height: 17px;
+// 		    top: -22px;
+// 		}
+// 	}
+
+// 	.widget-mail{
+// 		&:before{
+// 			width: 18px;
+// 		    height: 13px;
+// 		    top: -14px;
+// 		}
+// 	}
+
+// 	.transparent-button{
+// 		padding: 0.5em 1.3em;
+// 	    @include font-size(10);
+// 	}
+// }
+// @media screen and (min-device-width:1281px) { /* hi-res laptops and desktops */ }
