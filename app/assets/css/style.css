@@ -689,4 +689,161 @@ a {
     text-align: right;
     padding: 0;
   }
+
+  .navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 0px) {
+  main.articles {
+    padding: 50px 15px;
+  }
+  main.articles > div {
+    border-bottom: 2px solid #e2f3f7;
+    padding-bottom: 20px;
+    height: 993px;
+  }
+  main.articles footer {
+    text-align: right;
+    padding: 0;
+    color: #0090b4;
+  }
+  main.articles article {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+  main.articles article img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    margin-top: 22px;
+    margin-bottom: 17px;
+  }
+
+  h4 {
+    margin-top: 14px;
+    line-height: 21px;
+    color: #0090b4;
+    margin-bottom: 3px;
+  }
+
+  time {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 3px 0;
+  }
+
+  .readmore {
+    color: #0090b4;
+  }
+  .readmore:hover {
+    color: #0090b4;
+  }
+
+  small {
+    font-weight: bold;
+    color: #0090b4;
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .link-to-all {
+    text-align: right;
+  }
+  .link-to-all a {
+    top: -13px;
+    display: inline-block;
+    padding-left: 10px;
+    z-index: 1;
+    position: relative;
+    color: #0090b4;
+    font-size: 18px;
+    background-color: #fff;
+  }
+  .link-to-all span {
+    font-size: 13px;
+    font-weight: normal;
+  }
+}
+@media only screen and (min-width: 768px) {
+  h3 {
+    font-size: 36px;
+    margin-top: 16px;
+  }
+
+  main.articles > div {
+    float: left;
+  }
+  main.articles article {
+    margin-bottom: 33px;
+  }
+  main.articles article:nth-of-type(odd) {
+    padding-right: 25px;
+  }
+  main.articles article:nth-of-type(even) {
+    padding-left: 25px;
+  }
+  main.articles article div {
+    min-height: 360px;
+    height: 360px;
+  }
+
+  .link-to-all {
+    clear: both;
+  }
+  .link-to-all a {
+    top: -11px;
+  }
+  .link-to-all span {
+    top: 2px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 9px;
+  }
+
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 21px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h3 {
+    padding: 0 10px;
+  }
+
+  .link-to-all a {
+    padding: 0 10px;
+  }
+
+  main.articles {
+    padding: 80px 60px;
+  }
+  main.articles article {
+    margin-bottom: 33px;
+  }
+  main.articles article div {
+    min-height: 360px;
+    height: 360px;
+  }
+  main.articles article:nth-of-type(odd) {
+    padding: 0 1%;
+  }
+  main.articles article:nth-of-type(even) {
+    padding: 0 1%;
+  }
+  main.articles > div {
+    padding-bottom: 0;
+  }
 }

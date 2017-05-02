@@ -1,0 +1,144 @@
+@media only screen and (min-width:0px) {
+	main.articles{
+		padding: 50px 15px;
+		> div{
+    		border-bottom: 2px solid #e2f3f7;
+    		padding-bottom: 20px;
+    		// temporal
+    		height: 993px;
+		}
+		footer{
+			text-align: right;
+			padding: 0;
+			color: $blue-text;
+		}
+		article{
+			padding-left: 0;
+			padding-right: 0;
+			padding-bottom: 10px;
+    		img{
+    			width: 100%;
+    			margin-bottom: 0;
+    		}
+		}
+	}
+	h3{
+		margin-top: 22px;
+		margin-bottom: 17px;
+	}
+	h4{
+		margin-top: 14px;
+    	line-height: 21px;
+    	color: $blue-text;
+    	margin-bottom: 3px;
+	}
+	time{
+		font-size: 16px;
+	}
+	p{
+		font-size: 17px;
+	    line-height: 20px;
+	    margin: 3px 0;
+	}
+	.readmore{
+		color: $blue-text;
+		&:hover{
+			color: $blue-text;
+		}
+	}
+	small{
+		font-weight: bold;
+		color: $blue-text;
+		font-size: 24px;
+		margin-right: 5px;
+	}
+	.link-to-all{
+		text-align: right;
+		a{	
+			top: -13px;
+			display: inline-block;
+    		padding-left: 10px;
+    		z-index: 1;
+    		position: relative;
+			color: $blue-text; 
+			font-size: 18px;
+			background-color: #fff;
+		}
+		span{
+			font-size: 13px;
+    		font-weight: normal;
+		}
+	}
+}
+@media only screen and (min-width:768px) {
+	h3{
+		font-size: 36px;
+		margin-top: 16px;
+	}
+	main.articles{
+		> div{
+			float: left;
+		}
+		article{
+			margin-bottom: 33px;
+			&:nth-of-type(odd) {
+			    padding-right: 25px;
+			}
+			&:nth-of-type(even) {
+			    padding-left: 25px;
+			}
+			div{
+				min-height: 360px;
+				height: 360px;
+			}
+		}
+	}
+	.link-to-all{
+		clear: both;
+		a{
+			top: -11px;
+		}
+		span{
+			top: 2px;
+		}
+	}
+	h4{
+		font-size: 20px;
+		line-height: 23px;
+		margin-bottom: 9px;
+	}
+	p{
+		font-size: 18px;
+	    margin: 10px 0;
+	    line-height: 21px;
+	}
+}
+@media only screen and (min-width:1200px) {
+	h3{
+		padding: 0 10px;
+	}
+	.link-to-all{
+		a{
+			padding: 0 10px;
+		}
+	}
+	main.articles{
+		padding: 80px 60px;
+		article{
+			margin-bottom: 33px;
+			div{
+				min-height: 360px;
+				height: 360px;
+			}
+			&:nth-of-type(odd) {
+			    padding:0 1%;
+			}
+			&:nth-of-type(even) {
+			    padding:0 1%;
+			}
+		}
+		> div{
+			padding-bottom: 0;
+		}
+	}
+} 
