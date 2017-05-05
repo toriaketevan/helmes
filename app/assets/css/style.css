@@ -1,15 +1,3 @@
-.shpargalka {
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 100;
-  opacity: 0.4;
-  pointer-events: none;
-  width: 100%;
-  display: block;
-}
-
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -426,7 +414,7 @@ body {
   width: 100%;
 }
 
-.hovered:hover, a:hover, .main-nav:hover, .glyphicon:hover, .hovered:active, a:active, .main-nav:active, .glyphicon:active, .hovered.active, a.active, .active.main-nav, .active.glyphicon {
+.hovered:hover, a:hover, .main-nav:hover, .glyphicon:hover, .hovered:active, a:active, .main-nav:active, .glyphicon:active, .hovered:focus, a:focus, .main-nav:focus, .glyphicon:focus {
   text-decoration: none;
   color: #c6e7ef;
 }
@@ -732,6 +720,7 @@ img {
 
 @media only screen and (min-width: 0px) {
   .footer-widgets {
+    display: block;
     background: #e2f3f7;
     border-top: 2px solid #4f9eb2;
     padding-bottom: 10px;
@@ -835,69 +824,69 @@ img {
   }
 }
 @media only screen and (min-width: 0px) {
-  footer.page-footer {
+  .page-footer {
     background-color: #4f9eb2;
     padding: 10px 15px;
   }
-  footer.page-footer ul {
+  .page-footer ul {
     text-align: center;
   }
-  footer.page-footer ul li {
+  .page-footer ul li {
     display: inline-block;
   }
-  footer.page-footer ul li:before {
+  .page-footer ul li:before {
     content: "|";
     margin: 10px 2px;
     color: #fff;
   }
-  footer.page-footer ul li:first-of-type::before {
+  .page-footer ul li:first-of-type::before {
     display: none;
   }
-  footer.page-footer ul a {
+  .page-footer ul a {
     font-size: 15px;
   }
-  footer.page-footer .copy {
+  .page-footer .copy {
     color: #fff;
     text-align: center;
     margin-top: 7px;
   }
 }
 @media only screen and (min-width: 768px) {
-  footer.page-footer {
+  .page-footer {
     padding: 10px 23px;
     display: block;
   }
-  footer.page-footer ul {
+  .page-footer ul {
     text-align: right;
   }
-  footer.page-footer .copy {
+  .page-footer .copy {
     float: left;
     margin-top: 0;
   }
 }
 @media only screen and (min-width: 0px) {
-  main.articles {
+  .articles {
     padding: 50px 15px 3px;
   }
-  main.articles > div {
+  .articles > div {
     border-bottom: 2px solid #e2f3f7;
     padding-bottom: 20px;
   }
-  main.articles footer {
+  .articles footer {
     text-align: right;
     padding: 0;
     color: #0090b4;
   }
-  main.articles article {
+  .articles article {
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid #dddddd;
   }
-  main.articles article:last-child {
+  .articles article:last-child {
     border-bottom: none;
   }
-  main.articles article img {
+  .articles article img {
     width: 100%;
     margin-bottom: 0;
   }
@@ -963,20 +952,20 @@ img {
     margin-top: 16px;
   }
 
-  main.articles > div {
+  .articles > div {
     float: left;
   }
-  main.articles article {
+  .articles article {
     border-bottom: none;
     margin-bottom: 33px;
   }
-  main.articles article:nth-of-type(odd) {
+  .articles article:nth-of-type(odd) {
     padding-right: 25px;
   }
-  main.articles article:nth-of-type(even) {
+  .articles article:nth-of-type(even) {
     padding-left: 25px;
   }
-  main.articles article div {
+  .articles article div {
     min-height: 360px;
     height: 360px;
   }
@@ -1012,24 +1001,64 @@ img {
     padding: 0 10px;
   }
 
-  main.articles {
+  .articles {
     padding: 80px 60px 0;
   }
-  main.articles article {
+  .articles article {
     margin-bottom: 33px;
   }
-  main.articles article div {
+  .articles article div {
     min-height: 360px;
     height: 360px;
   }
-  main.articles article:nth-of-type(odd) {
+  .articles article:nth-of-type(odd) {
     padding: 0 1%;
   }
-  main.articles article:nth-of-type(even) {
+  .articles article:nth-of-type(even) {
     padding: 0 1%;
   }
-  main.articles > div {
+  .articles > div {
     padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 0px) {
+  .article-container {
+    margin: 50px 15px;
+  }
+  .article-container p.text {
+    padding-top: 10px;
+    color: #333333;
+  }
+  .article-container picture {
+    width: 70%;
+    display: block;
+  }
+  .article-container .article {
+    border-bottom: 2px solid #e2f3f7;
+    padding-bottom: 20px;
+  }
+  .article-container .link-to-all {
+    text-align: left;
+  }
+  .article-container .link-to-all a {
+    top: 13px;
+    left: -18px;
+    padding-left: 15px;
+  }
+  .article-container .link-to-all span {
+    margin-right: -2px;
+    top: 1px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .article-container {
+    margin: 60px 40px;
+  }
+  .article-container .link-to-all {
+    text-align: left;
+  }
+  .article-container .link-to-all a {
+    top: 19px;
   }
 }
 @media only screen and (min-width: 0px) {

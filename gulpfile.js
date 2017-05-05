@@ -15,17 +15,6 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber');
 
 /////////////////////////////////////
-// Concatenate all js
-/////////////////////////////////////
-// gulp.task('scripts', function(){
-// 	gulp.src(['app/assets/js/**/*.js', '!app/assets/js/**/*.min.js'])
-// 	.pipe(plumber())
-// 	.pipe(rename({suffix:'.min'}))
-// 	.pipe(uglify())
-// 	.pipe(gulp.dest('app/assets/js'));
-// });
-
-/////////////////////////////////////
 // Concatenate all css
 /////////////////////////////////////
 gulp.task('concatcss', function(){  
@@ -40,7 +29,7 @@ gulp.task('concatcss', function(){
 // Concatenate all js
 /////////////////////////////////////
 gulp.task('concatjs', function(){  
-  return gulp.src(['app/bower_components/jquery/dist/jquery.js', 'app/bower_components/angular/angular.js', 'app/bower_components/bootstrap/dist/js/bootstrap.min.js'])
+  return gulp.src(['app/bower_components/jquery/dist/jquery.js', 'app/bower_components/angular/angular.js', 'app/bower_components/angular-route/angular-route.js', 'app/bower_components/bootstrap/dist/js/bootstrap.min.js'])
   .pipe(uglify())
   .pipe(concat('main.min.js'))
   .pipe(gulp.dest('app/assets/js'))

@@ -27,16 +27,10 @@
 }
 @media only screen and (min-width:0px) {
 	.footer-widgets{
+		display: block;
 		background: #e2f3f7;
 		border-top: 2px solid #4f9eb2;
 		padding-bottom: 10px;
-		.menu-widgets{
-			//temp
-			// height: 722px;
-		 //    background: red;
-		 //    overflow: hidden;
-			//temp
-		}
 		h3{
 			color: $black-text;
 			font-weight: bold;

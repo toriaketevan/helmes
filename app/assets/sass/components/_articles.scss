@@ -1,11 +1,9 @@
 @media only screen and (min-width:0px) {
-	main.articles{
+	.articles{
 		padding: 50px 15px 3px;
 		> div{
     		border-bottom: 2px solid #e2f3f7;
     		padding-bottom: 20px;
-    		// temporal
-    		// height: 893px;
 		}
 		footer{
 			text-align: right;
@@ -80,7 +78,7 @@
 		font-size: 36px;
 		margin-top: 16px;
 	}
-	main.articles{
+	.articles{
 		> div{
 			float: left;
 		}
@@ -128,7 +126,7 @@
 			padding: 0 10px;
 		}
 	}
-	main.articles{
+	.articles{
 		padding: 80px 60px 0;
 		article{
 			margin-bottom: 33px;

@@ -1,5 +1,5 @@
 @media only screen and (min-width:0px) {
-	footer.page-footer{
+	.page-footer{
 		background-color: $blue;
 		padding: 10px 15px;
 		ul{
@@ -27,7 +27,7 @@
 	}
 }
 @media only screen and (min-width:768px) {
-	footer.page-footer{
+	.page-footer{
 		padding: 10px 23px;
 		display: block;
 		ul{
@@ -39,5 +39,3 @@
 		}
 	}
 }
-@media only screen and (min-width:1200px) {
-} 

@@ -11,7 +11,7 @@ body{
 }
 
 .hovered {
-	&:hover,&:active,&.active{
+	&:hover,&:active,&:focus{
 		text-decoration: none;
    		color: $whiteblue;
 	}
@@ -22,6 +22,8 @@ a{
 	color: #fff;
 	@extend .hovered;
 }
+
+
 
 .icon {
 		background-repeat: no-repeat;
