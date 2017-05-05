@@ -4,24 +4,18 @@
 	<title>HelmesApp</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
-	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
-	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/main.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
 </head>
 <body ng-controller="ctrl">
 	<div class="container custom-container">
-		<!-- <img class="shpargalka" src="assets/images/shpargalka/desktop.png"> -->
-		<!-- <img class="shpargalka" src="assets/images/shpargalka/tablet.jpg"> -->
-		<img class="shpargalka" src="assets/images/shpargalka/mobile.png">
 		<header class="page-header row">	
 			<h1 class="logo">
 				<a href="/">
 					<img src="assets/images/logo.png" alt="Stack Overflow" />
 				</a>⁢
 			</h1>
-		    <div class="order1 order1 navbar navbar-default col-lg-6 col-lg-offset-1 col-sm-11 col-sm-offset-1">
+		    <div class="order1  navbar navbar-default col-lg-6 col-lg-offset-1 col-sm-11 col-sm-offset-1">
 			  <div class="navbar-header">
 			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 			      <span class="icon-bar"></span>
@@ -114,15 +108,106 @@
 			</div>
 			<p class="link-to-all"><a href="">All publications<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></p>
 		</main>
-		<div class="row">
-			<!-- <aside class="col-lg-3 col-md-3 col-sm-6 col-sx-12">
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+		<section class="row reorder widgets">
+			<aside class="order1 col-lg-3 col-sm-6 col-sx-12">
+				<h3>Topics</h3>
+				<ul class="list-group">
+					<li class="list-group-item"><a href="">FATF Recommendations</a></li>
+					<li class="list-group-item"><a href="">Mutual Evaluations</a></li>
+					<li class="list-group-item"><a href="">High-risk and non-cooperative jurisdictions</a></li>
+					<li class="list-group-item"><a href="">Methods and Trends</a></li>
+					<li class="list-group-item"><a href="">inancing of Proliferation</a></li>
+					<li class="list-group-item"><a href="">Corruption</a></li>
+					<li class="list-group-item"><a href="">Financial Inclusion</a></li>
+					<li class="list-group-item darker-item"><a href="">All FATF Publications</a></li>
+				</ul>
 			</aside>
-			<section class="col-lg-9 col-md-9 col-sm-6 col-sx-12">
-			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-			</section> -->
-		</div>
-		<footer class="page-footer">
+			<section class="order2 publications col-lg-9 col-sm-6 col-sx-12">
+				<h3>Key publications</h3>
+				<div class="row publication main-publication">
+						<picture class="hidden-xs hidden-sm hidden-md col-xs-12">
+							<img src="/assets/pictures/publication.jpg" alt="publication">
+						</picture>
+						<div class="sec-right-cont col-lg-9 col-xs-12">
+							<header>
+							    <a href=""><h4>The FATF Recommendations</h4></a>
+							    <time>adopted February 2012</time>
+							</header>
+							<p>International Standards on Combating Money Laundering and the Financing of Terrorism & Proliferation</p>
+						</div>
+				</div>
+				<div class="publication">
+					<a href=""><h4>Methodology for Assessing Compliance with the FATF 40 Recommendations and FATF 9 Special Recommendations</h4></a>
+				</div>
+				<div class="publication">
+					<a href=""><h4>FATF Public Statement - 14 February 2014</h4></a>
+					<p>Jurisdictions for which an FATF call for action applies</p>
+				</div>
+				<div class="publication">
+					<a href=""><h4>Improving Global AML/CFT Compliance: on-going process - 14 February 2014</h4></a>
+					<p>Other monitored jurisdictions</p>
+				</div>
+				<a href=""><h4><span class="glyphicon glyphicon glyphicon-download-alt" aria-hidden="true"></span>FATF Annual Report: 2012-2013</h4></a>
+			</section>
+		</section>
+		<section class="footer-widgets">
+			<div class="menu-widgets row">
+				<div class="footer-widget footer-widget-1 col-xs-12 col-sm-3">
+					<h3>Reports</h3>
+					<ul class="">
+						<li class="bold-text"><span class="arrow-icon"></span><a href="">Typologies Reports</a></li>
+						<li class="bold-text"><span class="arrow-icon"></span><a href="">Guidance and Best Practice Reports</a></li>
+						<li class="bold-text"><span class="arrow-icon"></span><a href="">Mutual Evaluation Reports</a></li>
+						<li class="bold-text"><span class="arrow-icon"></span><a href="">Risk-Based Approach Reports</a></li>
+						<li ><a href="">FATF Annual Report: 2012-2013</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget footer-widget-2 col-xs-12 col-sm-3">
+					<h3>About</h3>
+					<ul class="">
+						<li><a href="">Who we are</a></li>
+						<li><a href="">Members and Observers</a></li>
+						<li><a href="">FATF Presidency</a></li>
+						<li><a href="">FATF Secretariat</a></li>
+						<li><a href="">History of the FATF</a></li>
+						<li><a href="">Outcomes of meetings</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget footer-widget-3 col-xs-12 col-sm-3">
+					<h3>Frequently asked questions</h3>
+					<ul class="">
+						<li class=""><a href="">General questions</a></li>
+						<li class=""><a href="">Member Countries and Observers</a></li>
+						<li class=""><a href="">Money Laundering</a></li>
+						<li class=""><a href="">FATF Secretariat</a></li>
+						<li class=""><a href="">Fraud Warning</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget footer-widget-3 col-xs-12 col-sm-3">
+					<h3>More</h3>
+					<ul class="">
+						<li class=""><a href="">FATF Glossary</a></li>
+						<li class=""><a href="">Calendar of events</a></li>
+						<li class=""><a href="">Job Opportunities</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="social-media-widget">
+				<h3>Follow us:</h3>
+				<ul>
+					<li><a class="facebook" href="">Facebook</a></li>
+					<li><a class="twitter" href="">Twitter</a></li>
+					<li><a class="btn email" href="">E-mail Alerts</a></li>
+				</ul>
+				</div>
+		</section>
+		<footer class="page-footer reorder">
+				<div class="copy order1">© fatf-ga 2014. All rights reserved</div>
+				<ul class="order2">
+					<li><a href="">terms &amp; conditions</a></li>
+					<li><a href="">site map</a></li>
+					<li><a href="">contact us</a></li>
+				</ul>
 		</footer>
 	</div>
 </body>

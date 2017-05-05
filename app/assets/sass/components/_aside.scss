@@ -1,0 +1,55 @@
+@media only screen and (min-width:0px) {
+	aside{
+		margin-top: 13px;
+		.list-group{
+			border: none;
+			a{
+				color: $blue-text;
+				font-size: 20px;
+				line-height: 29px;
+			}
+		}
+		.list-group-item{
+			background: #e2f3f7;
+			border:0;
+			border-radius: 0;
+			margin-bottom: 2px;
+			padding: 0;
+			&:last-child{
+				border-radius: 0;
+			}
+			a{
+				padding: 10px 21px;
+				display: block;
+			}
+		}
+		.darker-item{
+			background: $blue;
+			a{
+				color: #fff;
+			}
+		}
+	}
+}
+@media only screen and (min-width:768px) {
+	.widgets.reorder{
+		h3{
+			padding-left: 0;
+			padding-bottom: 10px;
+		}
+		aside{
+				padding-right: 25px;
+				h3{
+					margin-top: 0;
+				}
+			}
+	}
+}
+@media only screen and (min-width:1200px) {
+	.widgets.reorder{
+		aside{
+				padding:0;
+				// padding-left: 10px;
+			}
+	}
+} 

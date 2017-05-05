@@ -1,11 +1,11 @@
 @media only screen and (min-width:0px) {
 	main.articles{
-		padding: 50px 15px;
+		padding: 50px 15px 3px;
 		> div{
     		border-bottom: 2px solid #e2f3f7;
     		padding-bottom: 20px;
     		// temporal
-    		height: 993px;
+    		// height: 893px;
 		}
 		footer{
 			text-align: right;
@@ -16,6 +16,10 @@
 			padding-left: 0;
 			padding-right: 0;
 			padding-bottom: 10px;
+			border-bottom: 1px solid #dddddd;
+			&:last-child{
+				border-bottom: none;
+			}
     		img{
     			width: 100%;
     			margin-bottom: 0;
@@ -54,6 +58,7 @@
 	}
 	.link-to-all{
 		text-align: right;
+		height: 0;
 		a{	
 			top: -13px;
 			display: inline-block;
@@ -80,6 +85,7 @@
 			float: left;
 		}
 		article{
+			border-bottom: none;
 			margin-bottom: 33px;
 			&:nth-of-type(odd) {
 			    padding-right: 25px;
@@ -123,7 +129,7 @@
 		}
 	}
 	main.articles{
-		padding: 80px 60px;
+		padding: 80px 60px 0;
 		article{
 			margin-bottom: 33px;
 			div{

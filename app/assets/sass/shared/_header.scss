@@ -9,20 +9,15 @@
 .flag-icon-en, .flag-icon-fr{
 		@extend .flag-icon;
 	}
+.page-header{
+	@extend .reorder;
+}
 @media only screen and (min-width:0px) {
 	.page-header{
 		margin: 0;
 		padding: 0;
 		background: $blue;
-		display: flex;
-		flex-direction: column;
 		padding-top: 0px;
-		.order1{
-			 order: 2; 
-			}
-		.order2{
-			 order: 1; 
-			}
 	}
 	.main-nav{
 	    margin-bottom: 20px;
@@ -93,11 +88,6 @@
 		color: #fff;
 		font-size: 18px;
 		padding-right: 15px;	
-	}
-	.icon {
-		background-repeat: no-repeat;
-	    display: inline-block;
-	    vertical-align: middle;
 	}
 	.glyphicon{
 		font-size: 17px;

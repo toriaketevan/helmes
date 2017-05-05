@@ -2,6 +2,7 @@ body{
   font-family: Calibri, Arial, sans-serif;
    min-width:320px; // suppose you want minimun width of 1000px
    _width: expression( document.body.clientWidth > 1000 ? "1000px" : "auto" ); /* sets max-width for IE */
+   // display: none;
 }
 
 .container.custom-container{
@@ -22,6 +23,29 @@ a{
 	@extend .hovered;
 }
 
+.icon {
+		background-repeat: no-repeat;
+	    display: inline-block;
+	    vertical-align: middle;
+	    background-image: url(../images/helmes-sprite.png);
+}
+
 .row{
 	margin:0
+}
+
+.reorder{
+	display: flex;
+	flex-direction: column;
+	.order1{
+		order: 2; 
+	}
+	.order2{
+		order: 1; 
+	}
+}
+
+img{
+	width: 100%;
+	height: auto;
 }

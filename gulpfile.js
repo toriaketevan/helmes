@@ -6,18 +6,45 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	compass = require('gulp-compass'),
 	rename = require('gulp-rename'),
+	mainBowerFiles = require('main-bower-files'),
+	concat = require('gulp-concat'),
+	minify = require('gulp-minify-css'),
 	browserSync = require('browser-sync'),
+	minify = require('gulp-minify-css')
 	reload = browserSync.reload,
 	plumber = require('gulp-plumber');
+
 /////////////////////////////////////
-// Script Task
+// Concatenate all js
 /////////////////////////////////////
-gulp.task('scripts', function(){
-	gulp.src(['app/assets/js/**/*.js', '!app/assets/js/**/*.min.js'])
-	.pipe(plumber())
-	.pipe(rename({suffix:'.min'}))
-	.pipe(uglify())
-	.pipe(gulp.dest('app/assets/js'));
+// gulp.task('scripts', function(){
+// 	gulp.src(['app/assets/js/**/*.js', '!app/assets/js/**/*.min.js'])
+// 	.pipe(plumber())
+// 	.pipe(rename({suffix:'.min'}))
+// 	.pipe(uglify())
+// 	.pipe(gulp.dest('app/assets/js'));
+// });
+
+/////////////////////////////////////
+// Concatenate all css
+/////////////////////////////////////
+gulp.task('concatcss', function(){  
+  return gulp.src(['app/bower_components/bootstrap/dist/css/bootstrap.min.css','app/assets/css/style.css'])
+  .pipe(minify())
+  .pipe(concat('style.min.css'))
+  .pipe(gulp.dest('app/assets/css'))
+  .pipe(reload({stream:true}));
+});
+
+/////////////////////////////////////
+// Concatenate all js
+/////////////////////////////////////
+gulp.task('concatjs', function(){  
+  return gulp.src(['app/bower_components/jquery/dist/jquery.js', 'app/bower_components/angular/angular.js', 'app/bower_components/bootstrap/dist/js/bootstrap.min.js'])
+  .pipe(uglify())
+  .pipe(concat('main.min.js'))
+  .pipe(gulp.dest('app/assets/js'))
+  .pipe(reload({stream:true}));
 });
 
 /////////////////////////////////////
@@ -30,9 +57,7 @@ gulp.task('compass', function(){
 		config_file: './config.rb',
 		css:'app/assets/css',
 		sass: 'app/assets/sass',
-		// require: ['susy']
 	}))
-	// .pipe(autoprefixer('last 2 versions'))
 	.pipe(gulp.dest('app/assets/css/'))
 	.pipe(reload({stream:true}));
 });
@@ -52,7 +77,6 @@ gulp.task('browser-sync', function(){
 // HTML Task
 /////////////////////////////////////
 gulp.task('html', function(){
-	// gulp.src('app/**/*.html')
 	gulp.src('app/**/*.html')
 	.pipe(reload({stream:true}));
 })
@@ -61,8 +85,9 @@ gulp.task('html', function(){
 // Watch Task
 /////////////////////////////////////
 gulp.task('watch', function(){
-	gulp.watch('app/assets/js/**/*.js', ['scripts']);
+	gulp.watch('app/assets/js/**/*.js', ['concatjs']);
 	gulp.watch('app/assets/sass/**/*.scss', ['compass']);
+	gulp.watch('app/assets/css/style.css', ['concatcss']);
 	gulp.watch('app/**/*.html', ['html']);
 });
 
@@ -78,4 +103,4 @@ gulp.task('js',function(){
 /////////////////////////////////////
 // Default Task
 /////////////////////////////////////
-gulp.task('default',['scripts','browser-sync','watch','compass','html','js']);
+gulp.task('default',['browser-sync','watch','compass','html','js','concatjs','concatcss']);
